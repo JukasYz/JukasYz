@@ -9,7 +9,7 @@ Por aqui, compartilho meus estudos, experiências e a evolução do meu portfól
 ### 🌐 Conecte-se comigo
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/lucas-sousa-goncalves/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JukasYz)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lucassgoncalvesYZ)
 
 ---
 
@@ -47,7 +47,7 @@ Conhecimentos básicos que estou desenvolvendo na faculdade e nos meus projetos.
 
 ## 🚀 Projetos
 
-### [Lista de tarefas com busca](https://github.com/JukasYz/lista-tarefas)
+### [Lista de tarefas com busca](https://github.com/lucassgoncalvesYZ/lista-tarefas)
 
 Meu exercício de **HTML, CSS e JavaScript**, com busca por texto e manipulação do DOM. Inclui instruções para executar e ideias de melhorias.
 
