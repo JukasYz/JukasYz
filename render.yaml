@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: cyber-snake-royale
+    runtime: python
+    plan: starter
+    numInstances: 1
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: HOST_KEY
+        generateValue: true

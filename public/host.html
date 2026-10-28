@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10071d" />
+  <title>Painel do apresentador — Cyber Snake Royale</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="host-mode">
+  <div class="host-shell">
+    <header class="host-header">
+      <div class="host-title"><div class="brand-mark">&lt;/&gt;</div><div class="brand-text"><b>CYBER<span>SNAKE</span></b><small>CONTROLE DA ARENA // PDP 2026</small></div></div>
+      <div class="host-header-right"><span class="event-badge">PDP · Homenagem à Rede Cidadã</span><div class="top-status"><span id="hostDot" class="status-dot"></span><span id="hostStatus">Conectando</span></div></div>
+    </header>
+    <main class="host-layout">
+      <section class="arena-column">
+        <div class="arena-toolbar"><div><span class="eyebrow">VISÃO GERAL</span><h1>ARENA DE DADOS <span class="live-symbol">● AO VIVO</span></h1></div><div class="clock-host" id="clockHost">03:00</div></div>
+        <div class="host-canvas-wrap"><canvas id="hostArena"></canvas><div class="host-arena-overlay" id="hostArenaOverlay"><span class="live-dot"></span><b>AGUARDANDO JOGADORES</b><small>Compartilhe o QR Code com a turma</small></div></div>
+        <div class="stats-row"><div class="stat-tile"><small>JOGADORES</small><b id="statsPlayers">0 <span>/ 40</span></b></div><div class="stat-tile"><small>RODADA</small><b id="statsRound">00</b></div><div class="stat-tile"><small>STATUS</small><b id="statsPhase">LOBBY</b></div><div class="stat-tile"><small>MAIOR PONTUAÇÃO</small><b id="statsBest">0</b></div></div>
+        <div class="host-bottom"><section class="host-panel"><div class="panel-label">RANKING AO VIVO <span>TOP 10</span></div><div id="hostLeaderboard" class="host-leaderboard"></div></section><section class="host-panel event-panel"><div class="panel-label">LOG DO SISTEMA <span>ÚLTIMAS ATIVIDADES</span></div><div id="events" class="events"></div></section></div>
+      </section>
+      <aside class="host-sidebar">
+        <section class="host-panel join-panel"><div class="panel-label">ENTRE NA PARTIDA <span>SCAN ME</span></div><div class="qr-box"><img id="qrImage" alt="QR Code para entrar no jogo"/></div><div class="join-select"><label for="joinUrl">LINK PARA OS JOGADORES</label><select id="joinUrl"></select></div><button class="secondary-button" id="copyButton">COPIAR LINK DE ENTRADA ↗</button><small>Celulares e notebook precisam estar na mesma rede Wi-Fi. Para acesso externo, hospede o projeto na internet.</small></section>
+        <section class="host-panel control-panel"><div class="panel-label">CENTRAL DE CONTROLE</div><label for="duration" class="input-label">TEMPO DA PARTIDA</label><select id="duration"><option value="60">1 minuto</option><option value="90">1 minuto e 30 segundos</option><option value="120">2 minutos</option><option value="180" selected>3 minutos</option><option value="240">4 minutos</option></select><button class="primary-button" id="startButton">▶ INICIAR RODADA</button><div class="host-buttons"><button class="secondary-button" id="pauseButton">⏸ PAUSAR</button><button class="secondary-button" id="lobbyButton">↺ VOLTAR AO LOBBY</button></div><p class="host-message" id="hostMessage">Aguarde pelo menos um aluno entrar para iniciar.</p></section>
+        <section class="host-panel players-panel"><div class="panel-label">SALA DE ESPERA <span id="rosterCount">0/40</span></div><div id="roster" class="roster"></div></section>
+      </aside>
+    </main>
+  </div>
+  <div class="host-auth-fail" id="hostAuthFail" hidden><div class="glass-card"><h2>🔒 Acesso restrito</h2><p>Abra o endereço completo do painel exibido no terminal quando iniciou o servidor. Esse link contém uma chave privada.</p></div></div>
+  <script src="/render.js"></script>
+  <script src="/host.js"></script>
+</body>
+</html>

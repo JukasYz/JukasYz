@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#10071d" />
+  <meta name="description" content="Cyber Snake Royale — jogue na mesma arena com a turma inteira." />
+  <title>Cyber Snake Royale | Entrar na arena</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="player-mode">
+  <canvas id="arena" aria-label="Arena multiplayer de cobrinhas"></canvas>
+  <div class="scanline" aria-hidden="true"></div>
+  <header class="game-header">
+    <div class="brand-mark">&lt;/&gt;</div>
+    <div class="brand-text"><b>CYBER<span>SNAKE</span></b><small>ROYALE // PDP EDITION</small></div>
+    <div class="top-status"><span id="connectionDot" class="status-dot"></span><span id="statusText">Conectando</span></div>
+  </header>
+  <div class="hud" id="hud" hidden>
+    <div class="hud-pill"><small>PONTOS</small><strong id="myScore">0</strong></div>
+    <div class="hud-pill"><small>POSIÇÃO</small><strong id="myRank">—</strong></div>
+    <div class="hud-pill countdown-pill"><small>TEMPO</small><strong id="matchClock">03:00</strong></div>
+  </div>
+  <aside class="leader-mini" id="leaderMini" hidden>
+    <div class="mini-head"><span>TOP JOGADORES</span><span>● LIVE</span></div>
+    <div id="leaderRows"></div>
+  </aside>
+  <div class="active-powers" id="activePowers" hidden aria-live="polite"></div>
+  <div class="boostbar" id="boostbar" hidden><span>BOOST</span><div><i id="boostFill"></i></div></div>
+  <div class="virtual-pad" id="virtualPad" hidden aria-label="Controle direcional"><div class="pad-base"><div class="pad-thumb" id="padThumb"></div></div><span>ARRASTE PARA MOVER</span></div>
+  <button class="boost-button" id="boostButton" hidden aria-label="Acelerar"><b>⚡</b><span>BOOST</span></button>
+  <div class="respawn-toast" id="respawnToast" hidden>Reiniciando sua cobrinha...</div>
+  <main class="center-stage">
+    <section class="glass-card join-card" id="joinCard">
+      <div class="terminal-eyebrow"><span class="terminal-led"></span> SISTEMA ONLINE <span class="muted">/ LUCAS.PDP</span></div>
+      <div class="snake-emblem"><svg viewBox="0 0 96 96" fill="none"><path d="M18 66h18V30h23v20h17" stroke="#b96cff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="50" r="11" fill="#e8c5ff"/><circle cx="80" cy="47" r="2.5" fill="#271037"/></svg></div>
+      <div class="eyebrow">JOGO MULTIPLAYER EM TEMPO REAL</div>
+      <h1>CYBER SNAKE<br/><em>ROYALE</em></h1>
+      <p class="subtitle">Colete dados. Cresça. Desvie das outras cobrinhas.<br/>Domine a arena com a turma inteira.</p>
+      <label for="nameInput" class="input-label">SEU NICKNAME</label>
+      <input id="nameInput" type="text" maxlength="18" autocomplete="off" spellcheck="false" placeholder="Como quer aparecer no ranking?" />
+      <label class="input-label colors-title">ESCOLHA A COR</label>
+      <div class="colors" id="colors"></div>
+      <div class="customize-preview"><canvas id="skinPreview" aria-label="Prévia da sua cobrinha"></canvas><span id="skinDescription">Brilho clássico da arena.</span></div>
+      <div class="input-label" id="skinsTitle">ESCOLHA SUA SKIN</div>
+      <div class="skin-options" id="skins" role="group" aria-labelledby="skinsTitle"></div>
+      <button class="primary-button" id="joinButton"><span>ENTRAR NA ARENA</span><span>→</span></button>
+      <p class="input-error" id="joinError" role="alert"></p>
+      <p class="citizen-tribute">PDP · Homenagem à Rede Cidadã</p>
+      <div class="card-footer"><span>🎮 40 jogadores por sala</span><span>⚡ Grátis, sem cadastro</span></div>
+    </section>
+    <section class="glass-card wait-card" id="waitCard" hidden>
+      <div class="big-icon">⌛</div><span class="eyebrow">VOCÊ ESTÁ NA PARTIDA</span>
+      <h2>Conectado, <span id="waitingName"></span>!</h2>
+      <p>Estamos esperando o apresentador iniciar a rodada.</p>
+      <div class="waiting-count"><span class="live-dot"></span><strong id="waitingPlayers">1</strong><span>jogadores conectados</span></div>
+      <div class="tip-card"><b>COMO JOGAR</b><span>🕹️ Joystick ou mouse para virar</span><span>⚡ Botão BOOST para acelerar</span><span>💠 Colete dados e evite bater nas outras cobrinhas</span><span>🧲 Ímã · 🛡 Escudo · ⚡ Turbo: colete os hexágonos</span><span>👑 Derrubar o líder vale 15 pontos</span></div>
+    </section>
+    <section class="game-message" id="countdownCard" hidden><span>PREPARE-SE</span><strong id="countdownNumber">5</strong><small>BOA SORTE!</small></section>
+    <section class="glass-card results-card" id="resultsCard" hidden>
+      <div class="trophy">🏆</div><span class="eyebrow">FIM DE PARTIDA</span><h2>GG, turma!</h2>
+      <p>Rodada concluída. Confira quem dominou a rede.</p>
+      <div class="podium" id="podium"></div>
+      <div class="my-result" id="myResult"></div>
+      <small>Aguardando o apresentador iniciar a próxima rodada.</small>
+    </section>
+  </main>
+  <div class="pause-overlay" id="pauseOverlay" hidden>⏸ PARTIDA PAUSADA<br><small>Aguarde o apresentador continuar</small></div>
+  <div class="toast" id="toast" aria-live="polite"></div>
+  <script src="/render.js"></script>
+  <script src="/player.js"></script>
+</body>
+</html>

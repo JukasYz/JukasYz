@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "host authentication, displayed QR decoded to player URL without key, secret removed from URL",
+    "five distinct skin previews, color and skin selection, Rede Cidadã tribute and scrollable mobile join",
+    "mobile join, countdown, joystick changes server target, boost on/off",
+    "three server-authoritative pickups displayed with countdowns on mobile",
+    "pause overlay and frozen clock",
+    "leader marked on both rankings and skin/powers retained on reload",
+    "reload and network reconnect preserve identity and score",
+    "controls fit 360x640, 844x390 and 390x844",
+    "results show score and next round resets points"
+  ],
+  "pageErrors": []
+}

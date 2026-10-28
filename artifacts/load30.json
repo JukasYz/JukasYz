@@ -1,0 +1,37 @@
+{
+  "players": 30,
+  "seconds": 67,
+  "inputHzPerPlayer": 20,
+  "minStates": 804,
+  "skinsSynchronized": [
+    "circuit",
+    "galaxy",
+    "neon",
+    "pixel",
+    "striped"
+  ],
+  "powerKindsSeen": [
+    "magnet",
+    "shield",
+    "turbo"
+  ],
+  "stateGapMsP95": 110.66,
+  "stateGapMsMax": 166.97,
+  "rttMsP50": 1.42,
+  "rttMsP95": 11.71,
+  "totalPayloadMB": 528.35,
+  "serverOutboundPayloadMbps": 63.09,
+  "health": {
+    "ok": true,
+    "phase": "RESULTS",
+    "players": 30,
+    "metrics": {
+      "ticks": 2012,
+      "maxTickMs": 57.663,
+      "snapshots": 805
+    }
+  },
+  "measuredTcpReceivedMB": 65.4,
+  "measuredTcpReceivedMbps": 7.81,
+  "note": "TCP bytes received by 30 clients; WebSocket compression on, no TLS, no IP/TCP headers; payload metrics above are before compression."
+}

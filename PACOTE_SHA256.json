@@ -1,0 +1,156 @@
+{
+  "archive": "Cyber_Snake_Royale_FINAL.zip",
+  "sha256": "0006a7b7d728e0cd5eccebe6ada871ee38085eb146ef07721a772892c6479285",
+  "files": [
+    {
+      "file": "Cyber_Snake_Royale/.dockerignore",
+      "bytes": 50,
+      "sha256": "8177432359578fcc4ba707590f13303677c206455b00a1952bc6b32e0c61d347"
+    },
+    {
+      "file": "Cyber_Snake_Royale/.gitignore",
+      "bytes": 47,
+      "sha256": "2c2efcfddb472cc62b0c818d6704acb9d34095659b0fa7637df371242163e59e"
+    },
+    {
+      "file": "Cyber_Snake_Royale/Dockerfile",
+      "bytes": 238,
+      "sha256": "3db218e63cb99ef6cc9dcc730d0b1f012d6d5cdd6a547b22ed2e67b3862f38db"
+    },
+    {
+      "file": "Cyber_Snake_Royale/README_COMECE_AQUI.md",
+      "bytes": 9575,
+      "sha256": "220c328c22a36c947ef0601bca5560b1b3559edf4ecab24b13d43d4a7308c8c9"
+    },
+    {
+      "file": "Cyber_Snake_Royale/RESULTADOS_TESTES.md",
+      "bytes": 10234,
+      "sha256": "1608ed4a95d2aa2fa8ea9e3b4a7213e17244abafc426680ea7fed3892b02dc6d"
+    },
+    {
+      "file": "Cyber_Snake_Royale/artifacts/browser.json",
+      "bytes": 683,
+      "sha256": "41b86184cad1ff7cfe3e540b153197fb01da4917d2b82baa3cef257f6c72a68f"
+    },
+    {
+      "file": "Cyber_Snake_Royale/artifacts/customization.png",
+      "bytes": 199784,
+      "sha256": "5dac499867d98d3100095527ca8ab7ef1ae69b2818f328537a84e0f2b048ae84"
+    },
+    {
+      "file": "Cyber_Snake_Royale/artifacts/load30.json",
+      "bytes": 794,
+      "sha256": "0f085e994380522158ab2e227d89c8d75689320c87972ccb3dde961cc6b9fa30"
+    },
+    {
+      "file": "Cyber_Snake_Royale/artifacts/mobile-paused.png",
+      "bytes": 163878,
+      "sha256": "66116fdefb54707648a578aea5b6e092d07cde938761689c9c8891f57c25096f"
+    },
+    {
+      "file": "Cyber_Snake_Royale/artifacts/mobile-playing.png",
+      "bytes": 174616,
+      "sha256": "d3e29c1635656b18a1494f04c2292c8570889d2d17106af2b29011b20e3ccc4f"
+    },
+    {
+      "file": "Cyber_Snake_Royale/artifacts/presenter.png",
+      "bytes": 477017,
+      "sha256": "71a185adab151101399e613ab2e2db4318b4a051c88dbdc7db3822794b0da770"
+    },
+    {
+      "file": "Cyber_Snake_Royale/iniciar_linux_mac.sh",
+      "bytes": 254,
+      "sha256": "273f12317d902c06bcc09c9fd13f7c8dbbc39becdf962d35ad6228cd5c64e0e3"
+    },
+    {
+      "file": "Cyber_Snake_Royale/iniciar_windows.bat",
+      "bytes": 1303,
+      "sha256": "d8f03869177082cd41509b83b6e4c5b0f383d388d9d00190470199e3c4389303"
+    },
+    {
+      "file": "Cyber_Snake_Royale/public/favicon.svg",
+      "bytes": 292,
+      "sha256": "9734430383e9cf81cd2685fe76a4ead270fbcb538162c6d5153cb828c5fb63d9"
+    },
+    {
+      "file": "Cyber_Snake_Royale/public/host.html",
+      "bytes": 4024,
+      "sha256": "260a653acf126c92003d9177da9fd5a10bd97a80f1603de354d4961277e7ac54"
+    },
+    {
+      "file": "Cyber_Snake_Royale/public/host.js",
+      "bytes": 7298,
+      "sha256": "7d209ebcb5a2c1a040b88c0c5d33e121569dd4f36dc204ce9f13254e1a6751ff"
+    },
+    {
+      "file": "Cyber_Snake_Royale/public/index.html",
+      "bytes": 5464,
+      "sha256": "985748efc09dc44fbd943e0b82039a7e84e3fe2d844a84b8c5eb6a881857303b"
+    },
+    {
+      "file": "Cyber_Snake_Royale/public/player.js",
+      "bytes": 10581,
+      "sha256": "074b8140384b6cbbca3e61982131c25e23a566b3320210096cdc8d240442d6f8"
+    },
+    {
+      "file": "Cyber_Snake_Royale/public/render.js",
+      "bytes": 9180,
+      "sha256": "c8b6dedf646c42c5e843826a93f59598c77b3c7a68ac850eef1d16ad6453b13e"
+    },
+    {
+      "file": "Cyber_Snake_Royale/public/style.css",
+      "bytes": 18162,
+      "sha256": "e3372c279c8e0edd39bc6b57cd62678d69e81c89a6d9c82a9f44f1c7cea5024a"
+    },
+    {
+      "file": "Cyber_Snake_Royale/render.yaml",
+      "bytes": 339,
+      "sha256": "1179bb53ebb2b67e6529da79dfbf50dfffbf3a1cdfb18e3b6230ba31c8a2eb5a"
+    },
+    {
+      "file": "Cyber_Snake_Royale/requirements-dev.txt",
+      "bytes": 71,
+      "sha256": "847d4a81b9e6e50ebe3a5d764cbcc46aa60efe8f35760172f222607e08a2aa7e"
+    },
+    {
+      "file": "Cyber_Snake_Royale/requirements.txt",
+      "bytes": 185,
+      "sha256": "289fe68016843e15429de632f0cd805842ea90ba36e46d8e92166773aef4af58"
+    },
+    {
+      "file": "Cyber_Snake_Royale/server.py",
+      "bytes": 22781,
+      "sha256": "f09b7c7110f5ea7d01344f1aeed1e0ab2c3c6b9f6ac14160166fafae133f217e"
+    },
+    {
+      "file": "Cyber_Snake_Royale/tests/browser.py",
+      "bytes": 9054,
+      "sha256": "bfcf4421bb4ff6adeceb5ea2d5cbc2e1ad87d21e3d1266b7d8a2d93b20703e65"
+    },
+    {
+      "file": "Cyber_Snake_Royale/tests/carga_30.py",
+      "bytes": 7250,
+      "sha256": "77199274102bc12366ec30c64c1149a7f1700d864be4641a445f4d01c205150d"
+    },
+    {
+      "file": "Cyber_Snake_Royale/tests/features.py",
+      "bytes": 4245,
+      "sha256": "6b8450d56e77d1dd969bae09ab1f8ed854268542d703b02b00eae93aa9c03a6b"
+    },
+    {
+      "file": "Cyber_Snake_Royale/tests/integration.py",
+      "bytes": 4407,
+      "sha256": "58d8b3f97db15910dd4b08f3e2863061848103182bb1258fe2f1dcdfef264c41"
+    },
+    {
+      "file": "Cyber_Snake_Royale/tests/physics.py",
+      "bytes": 3930,
+      "sha256": "ac7ad0f02b6547b828e47b4c75bfaa294f63f8bee589bd97230cb94d9a801fbb"
+    },
+    {
+      "file": "Cyber_Snake_Royale/tests/protocol.py",
+      "bytes": 3351,
+      "sha256": "62c16f01f51d1c963024fcca64707941668b713c9c4fbad918db9fbb847cb739"
+    }
+  ]
+}

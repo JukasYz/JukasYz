@@ -9,3 +9,7 @@ O ZIP inclui o guia de uso e o relatório de testes. Foram executados testes de 
 ## Personalização e poderes
 
 Cinco skins na tela de nome e cor (Neon, Conexões, Listras, Pixel e Galáxia), líder com coroa e bônus de eliminação, ímã/escudo/turbo temporários e homenagem simples à Rede Cidadã. Testes: 25 regras, protocolo, integração, navegador mobile emulado e 30 clientes sincronizados em uma rodada completa. O guia e as evidências estão no ZIP.
+
+## Revisão do bloqueio de download
+
+O Windows do computador institucional relatou “Vírus detectado” durante o download do ZIP. A causa permanece sem identificação; não foi confirmado falso positivo. Os arquivos-fonte do mesmo pacote agora estão visíveis nesta branch para inspeção. Consulte `REVISAO_TI.md` e `PACOTE_SHA256.json`. Não desative proteções nem execute itens da quarentena.
